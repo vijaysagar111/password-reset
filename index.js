@@ -162,7 +162,7 @@ app.post("/password-reset", async (req, res) => {
     client.close();
   } catch (error) {
     res.status(500).json({
-      message: "Internl Server Error",
+      message: "Internal Server Error",
     });
   }
 });
